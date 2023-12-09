@@ -728,10 +728,13 @@ footer .column > a {
         margin-left: -40px;
     }
     .hamburger {
-        margin: 0 0 0 185px;
+        margin-right: 10px;
     }
     #nav_check:checked ~ nav {
         left: 0;
+        height: 70vh;
+    }
+    nav {
         height: 70vh;
     }
     .kata2 {
@@ -893,10 +896,10 @@ footer .column > a {
     }
     #nav_check:checked ~ nav {
         left: -20px;
-        height: 100vh;
+        height: 80vh;
     }
     nav {
-        height: 60vh;
+        height: 80vh;
     }
     .kata2 {
         font-size: 15px;
