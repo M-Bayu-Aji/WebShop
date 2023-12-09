@@ -154,8 +154,8 @@ nav ul li a.active {
     width: 105%;
     height: 50%;
     background-color: transparent;
-    border: 1px solid white;
-    left: -2.5%;
+    border: 2px solid white;
+    left: -3.5%;
     z-index: -1;
 }
 
@@ -177,7 +177,7 @@ nav ul li a.active {
     height: 110%;
     background-color: greenyellow;
     transform: translateX(-105%) skew(-10deg);
-    transition: 0.3s ease;
+    transition: .5s ease;
 }
 
 .button:hover span {
@@ -194,15 +194,15 @@ nav ul li a.active {
     box-shadow: 1px 1px 10px 1px;
 }
 .cont-konten {
-    display: flex;
+    display: flex; 
 }
 .img1 {
-    border-radius: 30px 60px;
-    margin: 40px 0px 0 150px;
+    border-radius: 60px 0px;
+    margin: 40px 0 0 130px;
 }
 .img2 {
     margin-left: 50px;
-    border-radius: 30px 50px;
+    border-radius: 50% 50% 0 0;
     margin-bottom: 20px;
 }
 
@@ -453,7 +453,7 @@ section .container {
 /* aboutttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
 
 .about {
-    padding: 8rem 7% 1.4rem;
+    padding: 3rem 7% 3rem;
     background-color: #ece8e1;
 }
 
@@ -534,24 +534,24 @@ section .container {
 footer {
     position: relative;
     display: grid;
-    background-color: #333;
     grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
+    gap: 5rem;
+    padding: 2rem;
 }
 
-footer .column .logo {
+footer .column .log {
     max-width: 100px;
     margin-bottom: 2rem;
 }
 
 footer .column p {
-    color: #eee;
+    color: #ccc;
     margin-bottom: 2rem;
     text-align: justify;
 }
 
-footer .column {
-    margin: 3rem 0 2rem 3rem;
+footer .column .log {
+    color: #fff;
 }
 
 footer .column .socials {
@@ -561,10 +561,11 @@ footer .column .socials {
 }
 
 footer .column .socials a {
-    color: black;
-    border: 1px solid #fff;
+    color: #111;
+    border: 1px solid #ccc;
     padding: 0 5px;
     font-size: 1.25rem;
+    margin-top: 10px;
     background-color: #fff;
 }
 
@@ -615,11 +616,8 @@ footer .column > a {
         margin-right: 136px;
     }
     .nav-item {
-    display: none;
+        display: none;
     }
-}
-
-@media only screen and (max-width: 800px) {
     nav {
         position: absolute;
         left: -300px;
@@ -691,7 +689,7 @@ footer .column > a {
     footer {
         grid-template-columns: 1fr 200px;
     }
-} 
+}
 
 @media (max-width: 660px) {
     .pencet {
@@ -703,47 +701,160 @@ footer .column > a {
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 390px) {
     .button a {
-        padding: 0;
-    }
-    .img9 img {
-        width: 300px;
-    }
-    .img10 img {
-        width: 300px;
-    }
-    footer .column p {
-        text-align: left;
+        padding: 20px 70px;
     }
     header {
-        width: 80%;
-    }
-    .card {
-        margin-right: 20px;
-    }
-    .products .box-container {
-        width: 380px;
-        margin: 0 65px 0;
-    }
-    .colection {
-        padding: 0;
-        margin: 20px 10px 20px;
-    }
-    .about {
-        padding: 1.4rem 4%;
+        padding: 0 45px 0 12px;
+        margin: 0;
     }
     .logo h1 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .hamburger {
+        margin: 0 0 0 180px;
+    }
+    #nav_check:checked ~ nav {
+        left: -20px;
+        height: 120vh;
+    }
+    nav {
+        height: 60vh;
+    }
+    .kata2 {
+        font-size: 15px;
+    }
+    .button  {
+        width: 70%;
+    }
+    .img1 {
+        margin-left: 150px;
+        width: 200px;
+        height: 200px;
+    }
+    .service h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .cards {
+        margin-top: 20px;
+    }
+    .card {
+        width: 250px;
+        padding: 20px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .card h2 {
+        letter-spacing: 0;
+        font-size: 19px;
+    }
+    .card p {
+        margin: 12px 0 0 0;
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .products .box-container {
+        margin: 0;
+    }
+    .products .box-container .box {
+        height: 390px;
+        margin: 0 .8rem 0 1rem;
+    }
+    .products .box-container .box .discount {
+        font-size: 15px;
+    }
+    .products .box-container .box .image img {
+        width: 200px;
+    }
+    .products .box-container .box .content h3 {
         font-size: 25px;
     }
-    .column p {
-        font-size: 13px;
+    .products .box-container .box .price span {
+        font-size: 25px;
     }
-    footer .column .socials a {
+    .products .box-container .box .image .icons a {
+        font-size: 20px;
+        width: 75%;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .products .box-container .box .image .icons a .material-symbols-outlined {
+        margin: 22px 0;
+    }
+    .udul h1 {
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+    .pencet a {
+        padding: 13px 15px;
+        font-size: 10px;
+    }
+    .udul p {
+        font-size: 11px;
+        text-align: center;
+    }
+    .img9 img {
+        width: 150px;
+    }
+    .img10 img {
+        width: 150px;
+    }
+    .colection {
+        border-radius: 0.5rem;
+        border: 0.1rem solid rgba(0, 0, 0, .1);
+        padding: 0;
+        margin: 1rem;
+    }
+    .about {
+        padding: 1.4rem 7% 1.4rem;
+    }
+    .about .row {
+        margin-top: 1rem;
+    }
+    .about h2 {
+        font-size: 30px;
+        margin-bottom: 20px
+    }
+    .about p {
+        font-size: 12px;
+    }
+    .about .row .map {
+        height: 15rem;
+        margin: 0;
+    }
+    .about .row .input-group i {
+        font-size: 17px;
+    }
+    .about .row form .input-group input {
+        padding: .5rem 30px;
         font-size: 1rem;
     }
-    footer .column h4 {
-        margin-bottom: 1rem;
+    .about .row form .btn {
+        font-size: 10px;
+        padding: .5rem 25px;
+    }
+    footer {
+        grid-template-columns: 1fr 100px;
+        gap: 2rem;
+    }
+    footer .column .log h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+    footer .column p {
+        font-size: 13px;
+    }
+    footer .column > a {
+        font-size: 13px;
+    } 
+    .copyright {
+        font-size: 13px;
     }
 }
-
