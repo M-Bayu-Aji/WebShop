@@ -896,10 +896,10 @@ footer .column > a {
     }
     #nav_check:checked ~ nav {
         left: -20px;
-        height: 80vh;
+        height: 100vh;
     }
     nav {
-        height: 80vh;
+        height: 100vh;
     }
     .kata2 {
         font-size: 15px;
@@ -1011,10 +1011,10 @@ footer .column > a {
     }
     .about .row form .input-group input {
         padding: .5rem 30px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .about .row form .btn {
-        font-size: 10px;
+        font-size: 14px;
         padding: .5rem 25px;
     }
     footer {
