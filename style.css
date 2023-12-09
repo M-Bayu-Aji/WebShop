@@ -716,7 +716,7 @@ footer .column > a {
         padding: 20px 30px;
     }
     header {
-        padding: 0 10px 0 60px;
+        padding: 0 10px 0 67px;
         margin: 0;
     }
     .logo h1 {
@@ -732,7 +732,7 @@ footer .column > a {
     }
     #nav_check:checked ~ nav {
         left: 0;
-        height: 100vh;
+        height: 70vh;
     }
     .kata2 {
         font-size: 15px;
@@ -753,18 +753,18 @@ footer .column > a {
         margin-top: 20px;
     }
     .card {
-        width: 250px;
+        width: 350px;
         padding: 20px;
-        font-size: 20px;
+        font-size: 50px;
         margin-left: 10px;
     }
     .card h2 {
         letter-spacing: 0;
-        font-size: 19px;
+        font-size: 25px;
     }
     .card p {
         margin: 12px 0 0 0;
-        font-size: 15px;
+        font-size: 17px;
     }
     .heading {
         font-size: 25px;
@@ -799,22 +799,22 @@ footer .column > a {
         margin: 22px 0;
     }
     .udul h1 {
-        font-size: 18px;
+        font-size: 25px;
         margin: 0 0 15px;
     }
     .pencet a {
-        padding: 13px 15px;
-        font-size: 10px;
+        padding: 13px 20px;
+        font-size: 15px;
     }
     .udul p {
-        font-size: 11px;
+        font-size: 16px;
         text-align: center;
     }
     .img9 img {
-        width: 150px;
+        width: 200px;
     }
     .img10 img {
-        width: 150px;
+        width: 200px;
     }
     .colection {
         border-radius: 0.5rem;
@@ -833,21 +833,21 @@ footer .column > a {
         margin-bottom: 20px
     }
     .about p {
-        font-size: 12px;
+        font-size: 15px;
     }
     .about .row .map {
         height: 15rem;
         margin: 0;
     }
     .about .row .input-group i {
-        font-size: 17px;
+        font-size: 22px;
     }
     .about .row form .input-group input {
-        padding: .5rem 30px;
-        font-size: 1rem;
+        padding: .5rem 0 .5rem 2rem;
+        font-size: 1.25rem;
     }
     .about .row form .btn {
-        font-size: 10px;
+        font-size: 1.25rem;
         padding: .5rem 25px;
     }
     footer {
