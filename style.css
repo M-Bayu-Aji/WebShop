@@ -896,10 +896,10 @@ footer .column > a {
     }
     #nav_check:checked ~ nav {
         left: -20px;
-        height: 100vh;
+        height: 88vh;
     }
     nav {
-        height: 100vh;
+        height: 88vh;
     }
     .kata2 {
         font-size: 15px;
