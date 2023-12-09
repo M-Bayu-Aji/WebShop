@@ -213,7 +213,7 @@ nav ul li a.active {
 .img2 {
     margin-left: 50px;
     border-radius: 50% 50% 0 0;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 /* End of homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
@@ -711,7 +711,7 @@ footer .column > a {
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 518px) {
     .button a {
         padding: 20px 30px;
     }
@@ -732,7 +732,7 @@ footer .column > a {
     }
     #nav_check:checked ~ nav {
         left: 0;
-        height: 114vh;
+        height: 100vh;
     }
     .kata2 {
         font-size: 15px;
@@ -893,7 +893,7 @@ footer .column > a {
     }
     #nav_check:checked ~ nav {
         left: -20px;
-        height: 120vh;
+        height: 100vh;
     }
     nav {
         height: 60vh;
