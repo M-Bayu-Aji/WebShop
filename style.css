@@ -24,6 +24,16 @@ a {
     color: greenyellow;
 }
 
+.lo h1 span {
+    color: greenyellow;
+}
+
+.lo h1 {
+    width: 100%;
+    font-size: 30px;
+    color: white;
+}
+
 header {
     width: 85%;
     height: 70px;
@@ -701,7 +711,166 @@ footer .column > a {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 470px) {
+    .button a {
+        padding: 20px 30px;
+    }
+    header {
+        padding: 0 10px 0 60px;
+        margin: 0;
+    }
+    .logo h1 {
+        font-size: 30px;
+        margin-left: -10px;
+    }
+    .lo  h1 {
+        font-size: 25px;
+        margin-left: -40px;
+    }
+    .hamburger {
+        margin: 0 0 0 185px;
+    }
+    #nav_check:checked ~ nav {
+        left: 0;
+        height: 114vh;
+    }
+    .kata2 {
+        font-size: 15px;
+    }
+    .button  {
+        width: 45%;
+    }
+    .img1 {
+        margin-left: 150px;
+        width: 200px;
+        height: 200px;
+    }
+    .service h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .cards {
+        margin-top: 20px;
+    }
+    .card {
+        width: 250px;
+        padding: 20px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .card h2 {
+        letter-spacing: 0;
+        font-size: 19px;
+    }
+    .card p {
+        margin: 12px 0 0 0;
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .products .box-container {
+        margin: 0;
+    }
+    .products .box-container .box {
+        height: 390px;
+        margin: 0 .8rem 0 1rem;
+    }
+    .products .box-container .box .discount {
+        font-size: 15px;
+    }
+    .products .box-container .box .image img {
+        width: 200px;
+    }
+    .products .box-container .box .content h3 {
+        font-size: 25px;
+    }
+    .products .box-container .box .price span {
+        font-size: 25px;
+    }
+    .products .box-container .box .image .icons a {
+        font-size: 20px;
+        width: 75%;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .products .box-container .box .image .icons a .material-symbols-outlined {
+        margin: 22px 0;
+    }
+    .udul h1 {
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+    .pencet a {
+        padding: 13px 15px;
+        font-size: 10px;
+    }
+    .udul p {
+        font-size: 11px;
+        text-align: center;
+    }
+    .img9 img {
+        width: 150px;
+    }
+    .img10 img {
+        width: 150px;
+    }
+    .colection {
+        border-radius: 0.5rem;
+        border: 0.1rem solid rgba(0, 0, 0, .1);
+        padding: 0;
+        margin: 1rem;
+    }
+    .about {
+        padding: 1.4rem 7% 1.4rem;
+    }
+    .about .row {
+        margin-top: 1rem;
+    }
+    .about h2 {
+        font-size: 30px;
+        margin-bottom: 20px
+    }
+    .about p {
+        font-size: 12px;
+    }
+    .about .row .map {
+        height: 15rem;
+        margin: 0;
+    }
+    .about .row .input-group i {
+        font-size: 17px;
+    }
+    .about .row form .input-group input {
+        padding: .5rem 30px;
+        font-size: 1rem;
+    }
+    .about .row form .btn {
+        font-size: 10px;
+        padding: .5rem 25px;
+    }
+    footer {
+        grid-template-columns: 1fr 100px;
+        gap: 2rem;
+    }
+    footer .column .log h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+    footer .column p {
+        font-size: 13px;
+    }
+    footer .column > a {
+        font-size: 13px;
+    } 
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 398px) {
     .button a {
         padding: 20px 70px;
     }
@@ -710,11 +879,17 @@ footer .column > a {
         margin: 0;
     }
     .logo h1 {
-        font-size: 20px;
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    .lo h1 {
         margin-left: 20px;
     }
     .hamburger {
-        margin: 0 0 0 180px;
+        margin: 0 0 0 150px;
+    }
+    nav ul {
+        margin-left: 15px;
     }
     #nav_check:checked ~ nav {
         left: -20px;
