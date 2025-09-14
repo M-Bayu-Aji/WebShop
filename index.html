@@ -11,274 +11,761 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #ef3f;">
+<body>
     <!-- header -->
-    <header>
-        <div class="lo">
-            <h1>Ortus<span>Seight</span></h1>
-        </div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
+    <header class="modern-header">
+        <div class="container-header">
             <div class="logo">
-                <h1><span>Ortus</span>Seight</h1>
+                <img src="logo_breadcrumbs.png" alt="Logo" class="logo-img">
+                <span class="brand">Bay<span>Shop</span></span>
             </div>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#produts">Products</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." class="search-input">
+                <button class="search-btn">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#service" class="nav-link">Services</a></li>
+                    <li><a href="#produts" class="nav-link">Products</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="cart-btn">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
     </header>
     <!-- end of header -->
     <main>
-        <!-- homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-        <article class="konten">
-            <div class="cont-konten">
-                <div class="kata2">
-                    <h1>
-                        Sepatu Futsal terbaru <br />dengan harga terjangkau dengan
-                        <br />kualitas yang lebih kuat
+        <!-- Modern Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-icon">⚡</span>
+                        <span>Terbaru & Terbaik</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Sepatu Futsal</span>
+                        <span class="highlight-text">Premium Collection</span>
                     </h1>
-                    <!-- tombol -->
-                    <button class="button">
-                        <div class="button1">
-                            <span></span>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight">Shop</a>
+                    
+                    <p class="hero-description">
+                        Temukan koleksi sepatu futsal terbaru dengan teknologi canggih, 
+                        desain modern, dan kenyamanan maksimal untuk performa terbaik di lapangan.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Produk</span>
                         </div>
-                    </button>
-                    <!-- end btn -->
+                        <div class="stat-item">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Pelanggan</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://shopee.co.id/search?keyword=ortuseight" class="btn-primary">
+                            <span>Belanja Sekarang</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                        <a href="#produts" class="btn-secondary">
+                            <span class="material-symbols-outlined">play_circle</span>
+                            <span>Lihat Koleksi</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="content-img">
-                    <img src="sepatu.jpg" alt="foto sepatu" height="300px" width="300px" class="img1" />
-                </div>
-            </div>
-        </article>
-        <img src="sepatu.jpg" alt="sepatu" height="200px" width="200px" class="img2" />
-        <!-- homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-
-        <!-- Serviceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-        <section id="service">
-            <div class="container">
-                <div class="service-wrapper">
-                    <div class="service">
-                        <h1>Our Service</h1>
-                        <div class="cards">
-                            <div class="card">
-                                <span class="material-symbols-outlined">
-                                    sports_and_outdoors
-                                </span>
-                                <h2>Kualitas Yang Kuat</h2>
-                                <p>Setiap pasang sepatu kami didesain dengan teknologi terbaru untuk meningkatkan
-                                    performa Anda di setiap pertandingan.</p>
+                
+                <div class="hero-visual">
+                    <div class="product-showcase">
+                        <div class="product-card-hero">
+                            <div class="product-badge">New</div>
+                            <img src="sepatu.jpg" alt="Sepatu Futsal Premium" class="product-image">
+                            <div class="product-info">
+                                <h3>OrtusEight Elite Pro</h3>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">Rp 550.000</span>
+                                    <span class="original-price">Rp 650.000</span>
+                                </div>
                             </div>
-                            <div class="card">
-                                <span class="material-symbols-outlined">
-                                    draw
-                                </span>
-                                <h2>Inovasi Desain</h2>
-                                <p>Kami hadir dengan desain inovatif untuk memastikan Anda tampil maksimal di lapangan
-                                    futsal.</p>
-                            </div>
-                            <div class="card">
-                                <span class="material-symbols-outlined">
-                                    style
-                                </span>
-                                <h2>Gaya Terkini</h2>
-                                <p> Temukan gaya terbaru dalam setiap koleksi sepatu kami, memadukan mode dan
-                                    fungsionalitas dengan sempurna.</p>
-                            </div>
+                        </div>
+                        
+                        <div class="floating-elements">
+                            <div class="floating-icon icon-1">🏆</div>
+                            <div class="floating-icon icon-2">⚽</div>
+                            <div class="floating-icon icon-3">🔥</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end of serviceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 
-        <!-- our producttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <!-- Modern Service Section -->
+        <section id="service" class="service-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Mengapa Memilih Kami</span>
+                    <h2 class="section-title">Layanan <span class="highlight">Terbaik</span></h2>
+                    <p class="section-description">
+                        Kami berkomitmen memberikan pengalaman berbelanja terbaik dengan 
+                        produk berkualitas tinggi dan layanan yang memuaskan.
+                    </p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <span class="material-symbols-outlined">sports_and_outdoors</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Kualitas Premium</h3>
+                        <p>Teknologi terdepan dan material berkualitas tinggi untuk performa maksimal di setiap pertandingan.</p>
+                        <div class="card-hover-effect"></div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <span class="material-symbols-outlined">palette</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Desain Inovatif</h3>
+                        <p>Desain yang memadukan estetika modern dengan fungsi optimal untuk tampil percaya diri di lapangan.</p>
+                        <div class="card-hover-effect"></div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Trend Terkini</h3>
+                        <p>Selalu mengikuti perkembangan tren terbaru dalam dunia olahraga futsal dan fashion streetwear.</p>
+                        <div class="card-hover-effect"></div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon">
+                            <span class="material-symbols-outlined">local_shipping</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Pengiriman Cepat</h3>
+                        <p>Layanan pengiriman express ke seluruh Indonesia dengan sistem tracking real-time.</p>
+                        <div class="card-hover-effect"></div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-icon">
+                            <span class="material-symbols-outlined">support_agent</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Support 24/7</h3>
+                        <p>Tim customer service yang siap membantu Anda kapan saja dengan respons yang cepat dan ramah.</p>
+                        <div class="card-hover-effect"></div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-icon">
+                            <span class="material-symbols-outlined">verified</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Garansi Resmi</h3>
+                        <p>Semua produk dilengkapi garansi resmi dan dapat ditukar jika tidak sesuai ekspektasi.</p>
+                        <div class="card-hover-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Products Section -->
         <section class="products" id="produts">
-            <h1 class="heading">Our Products</h1>
-            <div class="box-container">
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="sepatu.jpg" width="300px">
-                        <div class="icons">
-                            <a href="#"><span class="material-symbols-outlined">
-                                    favorite
-                                </span></a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight" class="cart-btn">Buy</a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight"><span class="material-symbols-outlined">
-                                    shopping_cart
-                                </span></a>
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Koleksi Terbaik</span>
+                    <h2 class="section-title">Produk <span class="highlight">Unggulan</span></h2>
+                    <p class="section-description">
+                        Jelajahi koleksi sepatu futsal premium kami dengan teknologi terdepan 
+                        dan desain yang memukau untuk performa terbaik Anda.
+                    </p>
+                </div>
+                
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">Semua Produk</button>
+                    <button class="filter-btn" data-filter="new">Terbaru</button>
+                    <button class="filter-btn" data-filter="popular">Populer</button>
+                    <button class="filter-btn" data-filter="sale">Diskon</button>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card" data-category="new sale">
+                        <div class="product-badges">
+                            <span class="badge new-badge">Baru</span>
+                            <span class="badge discount-badge">-15%</span>
                         </div>
-                        <div class="content">
-                            <h3>OrtusSeight</h3>
-                            <div class="price"><span>RP.500.000.00</span></div>
+                        
+                        <div class="product-image-container">
+                            <img src="sepatu.jpg" alt="OrtusEight Elite Pro" class="product-image">
+                            <div class="product-overlay">
+                                <div class="quick-actions">
+                                    <button class="quick-btn" title="Tambah ke Favorit">
+                                        <span class="material-symbols-outlined">favorite_border</span>
+                                    </button>
+                                    <button class="quick-btn" title="Quick View">
+                                        <span class="material-symbols-outlined">visibility</span>
+                                    </button>
+                                    <button class="quick-btn" title="Bandingkan">
+                                        <span class="material-symbols-outlined">compare</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-info">
+                            <div class="product-category">Sepatu Futsal</div>
+                            <h3 class="product-title">OrtusEight Elite Pro</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                                <span class="rating-text">(4.9) • 156 reviews</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">Rp 550.000</span>
+                                <span class="original-price">Rp 650.000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">
+                                    <span class="material-symbols-outlined">shopping_cart</span>
+                                    <span>Tambah ke Keranjang</span>
+                                </button>
+                                <a href="https://shopee.co.id/search?keyword=ortuseight" class="buy-now-btn">
+                                    Beli Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="popular">
+                        <div class="product-badges">
+                            <span class="badge popular-badge">Populer</span>
+                        </div>
+                        
+                        <div class="product-image-container">
+                            <img src="sepatu.jpg" alt="OrtusEight Classic" class="product-image">
+                            <div class="product-overlay">
+                                <div class="quick-actions">
+                                    <button class="quick-btn" title="Tambah ke Favorit">
+                                        <span class="material-symbols-outlined">favorite_border</span>
+                                    </button>
+                                    <button class="quick-btn" title="Quick View">
+                                        <span class="material-symbols-outlined">visibility</span>
+                                    </button>
+                                    <button class="quick-btn" title="Bandingkan">
+                                        <span class="material-symbols-outlined">compare</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-info">
+                            <div class="product-category">Sepatu Futsal</div>
+                            <h3 class="product-title">OrtusEight Classic</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <span class="rating-text">(4.7) • 89 reviews</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">Rp 450.000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">
+                                    <span class="material-symbols-outlined">shopping_cart</span>
+                                    <span>Tambah ke Keranjang</span>
+                                </button>
+                                <a href="https://shopee.co.id/search?keyword=ortuseight" class="buy-now-btn">
+                                    Beli Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="new">
+                        <div class="product-badges">
+                            <span class="badge new-badge">Baru</span>
+                        </div>
+                        
+                        <div class="product-image-container">
+                            <img src="sepatu.jpg" alt="OrtusEight Speed" class="product-image">
+                            <div class="product-overlay">
+                                <div class="quick-actions">
+                                    <button class="quick-btn" title="Tambah ke Favorit">
+                                        <span class="material-symbols-outlined">favorite_border</span>
+                                    </button>
+                                    <button class="quick-btn" title="Quick View">
+                                        <span class="material-symbols-outlined">visibility</span>
+                                    </button>
+                                    <button class="quick-btn" title="Bandingkan">
+                                        <span class="material-symbols-outlined">compare</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-info">
+                            <div class="product-category">Sepatu Futsal</div>
+                            <h3 class="product-title">OrtusEight Speed</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                                <span class="rating-text">(5.0) • 12 reviews</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">Rp 680.000</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">
+                                    <span class="material-symbols-outlined">shopping_cart</span>
+                                    <span>Tambah ke Keranjang</span>
+                                </button>
+                                <a href="https://shopee.co.id/search?keyword=ortuseight" class="buy-now-btn">
+                                    Beli Sekarang
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="sepatu.jpg" width="300px">
-                        <div class="icons">
-                            <a href="#"><span class="material-symbols-outlined">
-                                    favorite
-                                </span></a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight" class="cart-btn">Buy</a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight"><span class="material-symbols-outlined">
-                                    shopping_cart
-                                </span></a>
-                        </div>
-                        <div class="content">
-                            <h3>OrtusSeight</h3>
-                            <div class="price"><span>RP.500.000.00</span></div>
-                        </div>
-                    </div>
+                
+                <div class="load-more-container">
+                    <button class="load-more-btn">
+                        <span>Lihat Produk Lainnya</span>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </button>
                 </div>
-
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="sepatu.jpg" width="300px">
-                        <div class="icons">
-                            <a href="#"><span class="material-symbols-outlined">
-                                    favorite
-                                </span></a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight" class="cart-btn">Buy</a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight"><span class="material-symbols-outlined">
-                                    shopping_cart
-                                </span></a>
-                        </div>
-                        <div class="content">
-                            <h3>OrtusSeight</h3>
-                            <div class="price"><span>RP.500.000.00</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="sepatu.jpg" width="300px">
-                        <div class="icons">
-                            <a href="#"><span class="material-symbols-outlined">
-                                    favorite
-                                </span></a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight" class="cart-btn">Buy</a>
-                            <a href="https://shopee.co.id/search?keyword=ortuseight"><span class="material-symbols-outlined">
-                                    shopping_cart
-                                </span></a>
-                        </div>
-                        <div class="content">
-                            <h3>OrtusSeight</h3>
-                            <div class="price"><span>RP.500.000.00</span></div>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </section>
-        <!-- End porductttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
 
-        <!-- Colection -->
-        <section class="colection" style="background-color: #fff;" id="categories">
-            <div class="img9">
-                <img src="sepatu.jpg" width="400px">
-            </div>
-            <div class="udul">
-                <h1>We Provide The Best Interior Colection</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur vel laudantium. Reiciendis
-                    deleniti vero molestiae id nam minima eius dolorem quasi delectus. Fugit facilis quisquam eum
-                    praesentium quae quis!</p>
-                <div class="pencet">
-                    <a href="https://shopee.co.id/search?keyword=ortuseight">View More <i class="ri-arrow-right-line"></i></a>
+        <!-- Modern Collection Section -->
+        <section class="collection" id="categories">
+            <div class="collection-background">
+                <div class="parallax-shapes">
+                    <div class="parallax-shape shape-1"></div>
+                    <div class="parallax-shape shape-2"></div>
+                    <div class="parallax-shape shape-3"></div>
                 </div>
             </div>
-            <div class="img10">
-                <img src="sepatu.jpg" width="400px">
+            
+            <div class="section-container">
+                <div class="collection-content">
+                    <div class="collection-visual">
+                        <div class="collection-images">
+                            <div class="main-image">
+                                <img src="sepatu.jpg" alt="Collection Showcase" class="showcase-img">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <span class="overlay-badge">Premium Collection</span>
+                                        <h4>Elite Series 2024</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-cards">
+                                <div class="info-card card-1">
+                                    <span class="info-icon">🏆</span>
+                                    <div class="info-text">
+                                        <span class="info-title">Award Winning</span>
+                                        <span class="info-desc">Design Excellence</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-card card-2">
+                                    <span class="info-icon">⚡</span>
+                                    <div class="info-text">
+                                        <span class="info-title">High Performance</span>
+                                        <span class="info-desc">Pro Technology</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-card card-3">
+                                    <span class="info-icon">💎</span>
+                                    <div class="info-text">
+                                        <span class="info-title">Premium Quality</span>
+                                        <span class="info-desc">Best Materials</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-text">
+                        <span class="collection-subtitle">Koleksi Eksklusif</span>
+                        <h2 class="collection-title">
+                            Temukan <span class="gradient-text">Koleksi Terbaik</span> 
+                            <span class="highlight-text">Kami</span>
+                        </h2>
+                        
+                        <p class="collection-description">
+                            Jelajahi koleksi sepatu futsal premium dengan teknologi terdepan, 
+                            desain inovatif, dan kualitas yang telah terbukti memberikan performa 
+                            maksimal untuk para atlet profesional dan pemain futsal di seluruh dunia.
+                        </p>
+                        
+                        <div class="collection-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Teknologi Anti-Slip Premium</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Material Berkualitas Tinggi</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Desain Ergonomis & Nyaman</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span class="feature-text">Garansi Resmi 1 Tahun</span>
+                            </div>
+                        </div>
+                        
+                        <div class="collection-stats">
+                            <div class="stat-box">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Pelanggan Puas</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Produk Tersedia</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">4.9</span>
+                                <span class="stat-label">Rating Bintang</span>
+                            </div>
+                        </div>
+                        
+                        <div class="collection-actions">
+                            <a href="https://shopee.co.id/search?keyword=ortuseight" class="btn-primary">
+                                <span>Jelajahi Koleksi</span>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                            <a href="#contact" class="btn-secondary">
+                                <span class="material-symbols-outlined">phone</span>
+                                <span>Hubungi Kami</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- End colectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn -->
 
-        <!-- abaouttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
-
-        <section class="about">
-            <h2 id="contact"><span>Contact</span> Us</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sunt facilis quia quisquam obcaecat
-            </p>
-
-            <div class="row">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.64227394683823!2d106.81809079771497!3d-6.736098958105907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1701090930026!5m2!1sid!2sid"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-                <form action="">
-                    <div class="input-group">
-                        <i class="ri-user-line"></i>
-                        <input type="text" placeholder="Nama">
+        <!-- Modern Contact Section -->
+        <section class="about" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Hubungi Kami</span>
+                    <h2 class="section-title">Siap <span class="highlight">Membantu Anda</span></h2>
+                    <p class="section-description">
+                        Tim customer service kami siap membantu Anda 24/7. Hubungi kami untuk 
+                        pertanyaan, konsultasi produk, atau bantuan pemesanan.
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Alamat Toko</h4>
+                                    <p>Jl. Raya Cicurug No. 123<br>Sukabumi, Jawa Barat 43359</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <span class="material-symbols-outlined">phone</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Nomor Telepon</h4>
+                                    <p>+62 812-3456-7890<br>+62 21-8765-4321</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <span class="material-symbols-outlined">schedule</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Jam Operasional</h4>
+                                    <p>Senin - Sabtu: 08:00 - 21:00<br>Minggu: 09:00 - 18:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <span class="material-symbols-outlined">mail</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>info@baysshop.com<br>support@baysshop.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-media">
+                            <h4>Ikuti Kami</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="ri-instagram-line"></i>
+                                    <span>@baysshop</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="ri-whatsapp-line"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="ri-facebook-box-line"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="ri-twitter-x-line"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <i class="ri-mail-line"></i>
-                        <input type="email" placeholder="Email">
+                    
+                    <div class="contact-form-section">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.64227394683823!2d106.81809079771497!3d-6.736098958105907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1701090930026!5m2!1sid!2sid" 
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
+                            </iframe>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h3>Kirim Pesan</h3>
+                            <p>Isi form di bawah ini dan kami akan merespons dalam 24 jam.</p>
+                            
+                            <form class="form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="material-symbols-outlined">person</span>
+                                        <input type="text" placeholder="Nama Lengkap" required class="form-input">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="material-symbols-outlined">mail</span>
+                                        <input type="email" placeholder="Email" required class="form-input">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="material-symbols-outlined">phone</span>
+                                        <input type="tel" placeholder="Nomor Telepon" required class="form-input">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="material-symbols-outlined">category</span>
+                                        <select class="form-input" required>
+                                            <option value="">Pilih Topik</option>
+                                            <option value="product">Pertanyaan Produk</option>
+                                            <option value="order">Status Pesanan</option>
+                                            <option value="complaint">Keluhan</option>
+                                            <option value="suggestion">Saran</option>
+                                            <option value="other">Lainnya</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="material-symbols-outlined">message</span>
+                                        <textarea placeholder="Pesan Anda..." required class="form-input form-textarea" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">
+                                    <span>Kirim Pesan</span>
+                                    <span class="material-symbols-outlined">send</span>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <i class="ri-phone-line"></i>
-                        <input type="number" placeholder="No HP">
-                    </div>
-                    <button type="submit" class="btn">Kirim Pesan</button>
-                </form>
+                </div>
             </div>
         </section>
-
-        <!-- end abouttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
     </main>
-    <footer class="container" style="background-color: #333;">
-        <div class="column">
-            <div class="log">
-                <h1>Bys_SCH</h1>
-            </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic porro impedit minima magni assumenda
-                ratione est nesciunt enim veniam ducimus. In possimus qui corrupti explicabo eum repellendus
-                perspiciatis voluptas harum.
-            </p>
-            <div class="socials">
-                <a href="#"><i class="ri-facebook-box-line"></i></a>
-                <a href="#"><i class="ri-whatsapp-line"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-twitter-x-line"></i></a>
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="footer-background">
+            <div class="footer-shapes">
+                <div class="footer-shape shape-1"></div>
+                <div class="footer-shape shape-2"></div>
+                <div class="footer-shape shape-3"></div>
             </div>
         </div>
-    <div class="column">
-        <h4>Home</h4>
-            <a href="#">Service</a>
-            <a href="#">Products</a>
-            <a href="#">Categories</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-    </div>
-    <div class="column">
-        <h4>Help</h4>
-        <a href="#">Privacy and policy</a>
-        <a href="#">Team of use</a>
-    </div>
-    <div class="column">
-        <h4>Social</h4>
-        <a href="#">Facebook</a>
-        <a href="#">instagram</a>
-        <a href="#">whatsapp</a>
-    </div>
+        
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <img src="lightsaber.png" alt="Logo" class="footer-logo">
+                        <span class="brand-name">Bays<span>Shop</span></span>
+                    </div>
+                    <p class="brand-description">
+                        Menyediakan sepatu futsal berkualitas tinggi dengan teknologi terdepan 
+                        untuk performa maksimal di lapangan. Terpercaya sejak 2020.
+                    </p>
+                    <div class="social-media-footer">
+                        <a href="#" class="social-btn">
+                            <i class="ri-facebook-box-line"></i>
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-group">
+                    <div class="footer-section">
+                        <h4>Navigasi</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Beranda</a></li>
+                            <li><a href="#service">Layanan</a></li>
+                            <li><a href="#produts">Produk</a></li>
+                            <li><a href="#categories">Kategori</a></li>
+                            <li><a href="#contact">Kontak</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Kategori Produk</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Sepatu Futsal</a></li>
+                            <li><a href="#">Sepatu Running</a></li>
+                            <li><a href="#">Sepatu Casual</a></li>
+                            <li><a href="#">Aksesoris</a></li>
+                            <li><a href="#">Sale Items</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Layanan</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Panduan Ukuran</a></li>
+                            <li><a href="#">Cara Pemesanan</a></li>
+                            <li><a href="#">Kebijakan Return</a></li>
+                            <li><a href="#">Garansi Produk</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Newsletter</h4>
+                        <p class="newsletter-text">
+                            Dapatkan update produk terbaru dan penawaran khusus langsung di email Anda.
+                        </p>
+                        <form class="newsletter-form">
+                            <div class="newsletter-input">
+                                <input type="email" placeholder="Email Anda" required>
+                                <button type="submit">
+                                    <span class="material-symbols-outlined">send</span>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="payment-methods">
+                            <h5>Metode Pembayaran</h5>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳</span>
+                                <span class="payment-icon">🏦</span>
+                                <span class="payment-icon">📱</span>
+                                <span class="payment-icon">💰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 BaysShop. Semua hak cipta dilindungi undang-undang.</p>
+                    <p class="developer-credit">Dikembangkan oleh <strong>Bys_SCH PPLG X-2 Cicurug 8</strong></p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
     </footer>
-
-    <div class="copyright">
-        Copyright&copy; Bys_SCH PPLG X-2 Cicurug 8
-    </div>
 
     <script src="script.js"></script>
 </body>
