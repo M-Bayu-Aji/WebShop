@@ -93,8 +93,8 @@ BaysShop/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/M-Bayu-Aji/mbayuaji.github.io.git
-   cd mbayuaji.github.io
+   git clone https://github.com/M-Bayu-Aji/WebShop.git
+   cd WebShop
    ```
 
 2. **Open in browser**
